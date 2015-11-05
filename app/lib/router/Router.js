@@ -22,6 +22,21 @@ Router.route('/add', {
   name: 'AddStuff'
 });
 
+Router.route('/internetexplorer', function() {
+  this.render('InternetExplorer');
+});
+
+Router.route('/firefox', function() {
+  this.render('Firefox');
+});
+
+Router.route('/chrome', function() {
+  this.render('Chrome');
+});
+
+Router.route('/intro', function() {
+  this.render('Introduction');
+});
 
 Router.route('/stuff/:_id', {
   name: 'EditStuff',
