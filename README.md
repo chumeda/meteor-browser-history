@@ -1,0 +1,1 @@
+# meteor-browser-history
