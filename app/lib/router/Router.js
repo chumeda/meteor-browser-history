@@ -14,28 +14,16 @@ Router.route('/', {
   name: 'Home'
 });
 
-Router.route('/list', {
-  name: 'ListStuff'
+Router.route('/firefox', {
+  name: 'Firefox'
 });
 
-Router.route('/add', {
-  name: 'AddStuff'
+Router.route('/internetexplorer', {
+  name: 'InternetExplorer'
 });
 
-Router.route('/internetexplorer', function() {
-  this.render('InternetExplorer');
-});
-
-Router.route('/firefox', function() {
-  this.render('Firefox');
-});
-
-Router.route('/chrome', function() {
-  this.render('Chrome');
-});
-
-Router.route('/intro', function() {
-  this.render('Introduction');
+Router.route('/chrome', {
+  name: 'Chrome'
 });
 
 Router.route('/stuff/:_id', {
